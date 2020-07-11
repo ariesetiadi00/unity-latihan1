@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject completeUI;
     private bool check = false;
     private float delay = 1f;
     private string scenePosition;
@@ -20,5 +21,6 @@ public class GameManager : MonoBehaviour
     }
     public void FinishComplete(){
         Debug.Log("Level Complete");
+        completeUI.SetActive(true);
     }
 }

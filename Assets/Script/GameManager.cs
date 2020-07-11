@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public bool check = false;
-    public float delay = 1f;
+    private bool check = false;
+    private float delay = 1f;
     private string scenePosition;
     public void endGame () {
         if(check == false) {
@@ -13,8 +13,12 @@ public class GameManager : MonoBehaviour
             Invoke("Restart", delay);
         }
     }
-    public void Restart(){
+    public void Restart()
+    {
         scenePosition = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(scenePosition);
+    }
+    public void FinishComplete(){
+        Debug.Log("Level Complete");
     }
 }

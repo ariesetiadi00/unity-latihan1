@@ -57,7 +57,9 @@
   <ItemGroup>
      <Compile Include="Assets\Script\CameraMovement.cs" />
      <Compile Include="Assets\Script\FinishTrigger.cs" />
+     <Compile Include="Assets\Script\GameExit.cs" />
      <Compile Include="Assets\Script\GameManager.cs" />
+     <Compile Include="Assets\Script\GameStart.cs" />
      <Compile Include="Assets\Script\LevelComplete.cs" />
      <Compile Include="Assets\Script\PlayerCollision.cs" />
      <Compile Include="Assets\Script\PlayerMovement.cs" />
